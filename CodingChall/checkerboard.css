@@ -1,0 +1,184 @@
+*{
+    margin:0px;
+    padding:0px;
+  }
+
+  body{
+  padding: 0;
+  margin: 0;
+  min-width: 100%;
+  height: auto
+}
+
+.container
+{
+width: 50%;
+height: 50vh;
+display: grid;
+grid-template-rows: repeat(8, 1fr);
+background-color: tomato;
+border: solid black;
+border-width: 1em;
+}
+
+.board
+{
+display: grid;
+grid-template-columns: repeat(8, 1fr);
+background-color: black;
+}
+ 
+div.b1 .cell:nth-child(2n)
+{
+background-color:white;
+}
+
+div.b2 .cell:nth-child(2n+1)
+{
+background-color: white;
+}
+
+ 
+div.b3 .cell:nth-child(2n)
+{
+background-color:white;
+}
+
+div.b4 .cell:nth-child(2n+1)
+{
+background-color: white;
+}
+
+ 
+div.b5 .cell:nth-child(2n)
+{
+background-color:white;
+}
+
+div.b6 .cell:nth-child(2n+1)
+{
+background-color: white;
+}
+
+ 
+div.b7 .cell:nth-child(2n)
+{
+background-color:white;
+}
+
+div.b8 .cell:nth-child(2n+1)
+{
+background-color: white;
+}
+
+
+/*-----------------------------------------------*/
+
+section
+{
+display: flex;
+flex-direction: column;
+gap: 1em;
+align-items: center;
+}
+
+
+.set
+{
+table-layout: fixed;
+width: 50%;
+height: 50vh;
+text-align: center;
+border:1em solid black;
+}
+
+.set td
+{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+.r1 td:nth-child(2n), .r3 td:nth-child(2n), .r5 td:nth-child(2n), .r7 td:nth-child(2n)
+{
+background-color: black;
+}
+
+.r2 td:nth-child(2n+1), .r4 td:nth-child(2n+1), .r6 td:nth-child(2n+1), .r8 td:nth-child(2n+1)
+{
+background-color: black;
+}
+
+
+.flag
+{
+table-layout: auto;
+width:50%;
+height: 50vh;
+text-align: center;
+}
+
+.stripe
+{
+border: none;
+width: auto;
+background-color: white;
+}
+
+.stars
+{
+width: 34%;
+background-image: url(CodeP/stars.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.stripe:nth-child(2n+1)
+{
+background-color: red;
+}
+
+tr, td
+{
+border: 2px solid black;
+}
+
+.names
+{
+width: 100px;
+height: 100px;
+display: grid;
+grid-template-rows: repeat(2 1fr);
+}
+
+.products, .descriptions
+{
+display: grid;
+grid-template-columns: repeat(8, 1fr);
+grid-area:auto;
+}
+
+.descriptions
+{
+padding-bottom: 50vh;
+}
+
+.stuff
+{
+width: 100px;
+height: 100px;
+border: 2px solid black;
+overflow:scroll;
+}
+
+.stuff img
+{
+width: 100px;
+height: 100%;
+}
+
+.container2
+{
+padding-right: 60vw;
+}
